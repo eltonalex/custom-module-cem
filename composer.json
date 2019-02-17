@@ -1,7 +1,7 @@
 {
     "name": "danielmme/valida-email",
     "description": "Módulo customizado para o WebSite do CEM baseado em Drupal 8",
-    "type": "drupal",
+    "type": "drupal-module",
     "license": "MIT",
     "authors": [
         {
