@@ -15,9 +15,15 @@
                         <form id="formulario_controle" method="post">
                             <div class="form-line col-xs-12 same-line">
                                 <label>e-mail*</label>
-                                <input id="email" name="email" type="text" class="campo_texto" placeholder="seunome@seuemail.com.br">
-                                <input type="hidden" name="id_pagina" id="id_curso" value="{{ nid }}">
-                                <input type="submit" name="enviar" value="Enviar">
+                                {% if lang == en %}
+                                    <input id="email" name="email" type="text" class="campo_texto" placeholder="example@email.com">
+                                    <input type="hidden" name="id_pagina" id="id_curso" value="{{ nid }}">
+                                    <input type="submit" name="enviar" value="Send">
+                                {% else %}
+                                    <input id="email" name="email" type="text" class="campo_texto" placeholder="exemplo@email.com">
+                                    <input type="hidden" name="id_pagina" id="id_curso" value="{{ nid }}">
+                                    <input type="submit" name="enviar" value="Enviar">
+                                {% endif %}
                             </div>
                         </form>
                     </div>

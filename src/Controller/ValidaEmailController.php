@@ -43,7 +43,8 @@ class ValidaEmailController extends ControllerBase {
     public function form(Request $request) {
         return [
             '#theme' => 'my_template',
-            '#nid' => $request->query->get('nid'),
+            '#nid'   => $request->query->get('nid'),
+            '#lang'  => $request->getLocale(),
         ];
     }
 
